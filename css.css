@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.product-showcase {
+    position: relative;
+    display: inline-block;
+}
+
+.model-image {
+    width: 100%; /* Adjust as needed */
+}
+
+.item {
+    position: absolute;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.item.hat {
+    top: 20%; /* Adjust based on model image */
+    left: 15%; /* Adjust based on model image */
+}
+
+.item.boots {
+    top: 60%; /* Adjust based on model image */
+    left: 30%; /* Adjust based on model image */
+}
+
+.item.dress {
+    top: 40%; /* Adjust based on model image */
+    left: 50%; /* Adjust based on model image */
+}
+
+.item.pants {
+    top: 70%; /* Adjust based on model image */
+    left: 40%; /* Adjust based on model image */
+}
+
+.product-showcase:hover .item {
+    display: block; /* Show items on hover */
+}
